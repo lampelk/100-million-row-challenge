@@ -6,6 +6,7 @@ on:
 
 jobs:
   run_benchmarks:
+    environment: benchmarks
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
