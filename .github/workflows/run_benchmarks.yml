@@ -107,6 +107,7 @@ jobs:
             git pull --ff-only origin main
 
             echo \"\$ENTRY\" >> leaderboard.csv
+            php8.5 tempest leaderboard:parse
             git add leaderboard.csv
   
             git commit -m '\''Update leaderboard'\'' || true
