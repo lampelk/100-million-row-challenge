@@ -107,7 +107,10 @@ jobs:
             git pull --ff-only origin main
 
             echo \"\$ENTRY\" >> leaderboard.csv
-            php8.5 tempest leaderboard:parse
+            rm -r /home/forge/benchmark/.tempest
+            php8.5 tempest cache:clear --force
+            php8.5 tempest discovery:generate
+            php8.5 tempest leaderboard:format
             git add leaderboard.csv
   
             git commit -m '\''Update leaderboard'\'' || true
