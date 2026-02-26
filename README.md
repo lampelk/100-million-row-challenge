@@ -117,7 +117,7 @@ All entries must be submitted before March 16, 2026 (so you have until March 15,
 - One PhpStorm Elephpant
 - One-year JetBrains all-products pack license
 
-**🏅 participation prize**
+**🏅 participation prize**:
 
 A random winner picked from all entries will get:
 
