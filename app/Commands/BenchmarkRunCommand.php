@@ -450,7 +450,7 @@ final class BenchmarkRunCommand
         exec($gitCommit, $output, $returnCode);
 
         if ($returnCode !== 0) {
-            $this->prError($prNumber, "Git commit failed");
+            $this->prError($prNumber, "Nothing to commit");
             return;
         }
 
